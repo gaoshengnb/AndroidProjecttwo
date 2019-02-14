@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:paddingRight="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.stx.xhb.xbanner.XBanner
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/detalis_image"
+                        android:layout_width="315dp"
+                        android:layout_height="274dp"
+                        android:clipChildren="false"
+                        app:AutoPlayTime="3000"
+                        app:clipChildrenLeftRightMargin="10dp"
+                        app:isShowIndicatorOnlyOne="false"
+                        app:isShowNumberIndicator="true"
+                        app:pageChangeDuration="800"></com.stx.xhb.xbanner.XBanner>
+
+                    <TextView
+                        android:id="@+id/detalis_price"
+                        android:text="2232"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="#ff0000"
+                        android:layout_below="@id/detalis_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/detalis_sale"
+                        android:text="2232"
+                        android:layout_marginTop="15dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:layout_below="@id/detalis_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/detalis_name"
+                        android:text="123"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@id/detalis_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/detalis_weighnt"
+                        android:layout_marginTop="14dp"
+                        android:textColor="#000000"
+                        android:textSize="12sp"
+                        android:layout_below="@id/detalis_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:layout_below="@id/detalis_weighnt"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="3dp"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:text="商品详情"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <WebView
+                            android:id="@+id/detalis_web"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></WebView>
+                    </LinearLayout>
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
